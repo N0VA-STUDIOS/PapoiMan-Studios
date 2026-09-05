@@ -11,6 +11,9 @@ function renderProjects(){
   var grid = document.getElementById('project-grid');
   if(!grid) return;
   var html = GAMES.map(function(game){
+    var playBtn = game.url
+      ? '<a href="' + game.url + '" class="project-play" target="_blank" rel="noopener">Jugar →</a>'
+      : '';
     return '<article class="project-card">' +
       '<span class="project-id">' + game.id + '</span>' +
       '<h3>' + game.title + '</h3>' +
@@ -18,6 +21,7 @@ function renderProjects(){
         '<span>' + game.period + '</span>' +
         '<span class="type">' + game.type + '</span>' +
       '</div>' +
+      playBtn +
     '</article>';
   }).join('');
   // "afterbegin" para que la tarjeta "+ Próximo proyecto" (ya en el HTML) quede al final
