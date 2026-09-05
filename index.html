@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAPOI.DEV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="brand">PAPOI<span>.</span>DEV</div>
+  <div class="nav-links">
+    <a href="#inicio" data-view="inicio" class="active">Inicio</a>
+    <a href="#proyectos" data-view="proyectos">Proyectos</a>
+    <a href="#galeria" data-view="galeria">Galería</a>
+    <a href="#sobre-mi" data-view="sobre-mi">Sobre mí</a>
+    <a href="#contacto" data-view="contacto">Contacto</a>
+  </div>
+</nav>
+<main class="wrap">
+  <!-- ===================== VENTANA: INICIO ===================== -->
+  <section id="view-inicio" class="view active">
+    <header class="page-hero" style="padding-top:20px;">
+      <div class="eyebrow-tag"><span class="dot"></span>Desarrollador de juegos web</div>
+      <h1>CONSTRUYO<br>UNIVERSOS<br><span class="accent">JUGABLES.</span></h1>
+      <p>Juegos y aplicaciones 2D para navegador, ambientados en el universo PAPOI. Mecánicas de oleadas, física de escalada y multijugador local, hechos desde cero.</p>
+      <div class="hero-cta">
+        <a href="#proyectos" data-view="proyectos" class="btn btn-fill">Ver proyectos</a>
+        <a href="#contacto" data-view="contacto" class="btn btn-line">Contactar</a>
+      </div>
+    </header>
+    <div class="section-head">
+      <span class="section-num">—</span>
+      <h2>Explora el sitio</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="doors">
+      <a href="#proyectos" data-view="proyectos" class="door">
+        <span class="door-num">01</span>
+        <h3>Proyectos</h3>
+        <p>El archivo completo de juegos: mecánicas, tecnología usada y enlaces para jugar o revisar el código.</p>
+        <span class="go">Entrar →</span>
+      </a>
+      <a href="#sobre-mi" data-view="sobre-mi" class="door">
+        <span class="door-num">02</span>
+        <h3>Sobre mí</h3>
+        <p>Quién hace estos juegos, con qué herramientas trabajo y cómo empezó todo el universo PAPOI.</p>
+        <span class="go">Entrar →</span>
+      </a>
+      <a href="#contacto" data-view="contacto" class="door">
+        <span class="door-num">03</span>
+        <h3>Contacto</h3>
+        <p>Formas de escribirme, disponibilidad actual y qué tipo de colaboraciones acepto.</p>
+        <span class="go">Entrar →</span>
+      </a>
+    </div>
+  </section>
+  <!-- ===================== VENTANA: PROYECTOS ===================== -->
+  <section id="view-proyectos" class="view">
+    <header class="page-hero">
+      <div class="eyebrow-tag"><span class="dot"></span>Archivo de proyectos</div>
+      <h1>PROYECTOS<span class="accent">.</span></h1>
+      <p>Cada juego es un expediente propio dentro del universo PAPOI: su mecánica principal, cómo está construido y dónde puedes jugarlo o revisar su código.</p>
+    </header>
+    <!--
+      Las tarjetas de juegos se generan automáticamente desde GAMES en data.js.
+      Para agregar un juego nuevo, edita ese archivo — no hace falta tocar este HTML.
+      La tarjeta "+ Próximo proyecto" de abajo es fija y siempre queda al final.
+    -->
+    <div class="project-grid" id="project-grid">
+      <article class="project-card add-new">
+        + Próximo proyecto en camino
+      </article>
+    </div>
+  </section>
+  <!-- ===================== VENTANA: GALERIA ===================== -->
+  <section id="view-galeria" class="view">
+    <header class="page-hero">
+      <div class="eyebrow-tag"><span class="dot"></span>Capturas del universo PAPOI</div>
+      <h1>GALERÍA<span class="accent">.</span></h1>
+      <p>Screenshots de los juegos en desarrollo. Haz clic en cualquier imagen para verla en grande y navegar entre todas.</p>
+    </header>
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2>Filtrar por juego</h2>
+      <span class="rule"></span>
+    </div>
+    <!--
+      Los botones de filtro y las capturas se generan automáticamente desde
+      GAMES y SCREENSHOTS en data.js. Para agregar tus propias capturas, edita
+      ese archivo y coloca tus imágenes en la carpeta /images — no hace falta
+      tocar este HTML.
+    -->
+    <div class="gallery-filters" id="gallery-filters"></div>
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </section>
+  <!-- ===================== VENTANA: SOBRE MI ===================== -->
+  <section id="view-sobre-mi" class="view">
+    <header class="page-hero">
+      <div class="eyebrow-tag"><span class="dot"></span>Quién está detrás de PAPOI</div>
+      <h1>SOBRE MÍ<span class="accent">.</span></h1>
+      <p>Desarrollo juegos web 2D en solitario, dentro de un mismo universo propio. Esta es la historia corta de cómo y por qué.</p>
+    </header>
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2>En números</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="about-grid">
+      <div class="stat-block">
+        <div class="stat">
+          <div class="num">2+</div>
+          <div class="label">Juegos publicados</div>
+        </div>
+        <div class="stat">
+          <div class="num">100%</div>
+          <div class="label">Hecho a mano, sin motores externos</div>
+        </div>
+        <div class="stat">
+          <div class="num">LAN</div>
+          <div class="label">Soporte multijugador local</div>
+        </div>
+      </div>
+      <div class="about-text">
+        <p><strong>Desarrollo juegos web 2D</strong> dentro de un mismo universo propio: PAPOI. Cada proyecto explora una mecánica distinta — desde la supervivencia por oleadas hasta la física de escalada — manteniendo un estilo visual y una identidad coherentes entre sí.</p>
+        <p>Todo corre directamente en el navegador, sin instalaciones ni motores de terceros. El código, los diseños y las decisiones de cada juego están documentados en los repositorios enlazados en la sección de proyectos.</p>
+      </div>
+    </div>
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2>Herramientas</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="skills-grid">
+      <div class="skill">
+        <div class="name">HTML5 Canvas</div>
+        <div class="desc">Renderizado 2D a bajo nivel, sin frameworks gráficos.</div>
+      </div>
+      <div class="skill">
+        <div class="name">JavaScript</div>
+        <div class="desc">Lógica de juego, estados y control de eventos.</div>
+      </div>
+      <div class="skill">
+        <div class="name">Físicas propias</div>
+        <div class="desc">Sistemas de colisión e impulso construidos desde cero.</div>
+      </div>
+      <div class="skill">
+        <div class="name">Networking LAN</div>
+        <div class="desc">Sincronización de partidas en red local.</div>
+      </div>
+      <div class="skill">
+        <div class="name">Pixel art</div>
+        <div class="desc">Dirección visual y assets del universo PAPOI.</div>
+      </div>
+      <div class="skill">
+        <div class="name">Diseño de UI</div>
+        <div class="desc">Menús, overlays y experiencia de usuario en juego.</div>
+      </div>
+    </div>
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2>Cómo empezó</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="year">Origen</div>
+        <h3>Primeros experimentos</h3>
+        <p>Los primeros prototipos en Canvas: mecánicas simples para aprender cómo funciona un bucle de juego en el navegador.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="year">Después</div>
+        <h3>Nace el universo PAPOI</h3>
+        <p>Los prototipos sueltos se unen bajo una misma identidad visual y narrativa, dando lugar al universo PAPOI.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="year">Ahora</div>
+        <h3>Papoi Survives y Papoi Climb</h3>
+        <p>Dos juegos activos en desarrollo constante, cada uno explorando una mecánica y un reto técnico distintos.</p>
+      </div>
+    </div>
+  </section>
+  <!-- ===================== VENTANA: CONTACTO ===================== -->
+  <section id="view-contacto" class="view">
+    <header class="page-hero">
+      <div class="eyebrow-tag"><span class="dot"></span>Hablemos</div>
+      <h1>CONTACTO<span class="accent">.</span></h1>
+      <p>¿Tienes una idea, quieres colaborar en un proyecto o simplemente probar los juegos en red? Estas son las formas de encontrarme.</p>
+    </header>
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2>Disponibilidad</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="availability">
+      <span class="blip"></span>
+      <p><strong>Abierto a colaboraciones</strong> — actualmente desarrollando en solitario, pero disponible para feedback, testers y posibles colaboraciones puntuales en arte o sonido.</p>
+    </div>
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2>Canales</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="contact-grid">
+      <a href="mailto:tu-correo@ejemplo.com" class="contact-row">
+        <span class="label">Email</span>
+        <span class="value">tu-correo@ejemplo.com</span>
+      </a>
+      <a href="https://github.com/" class="contact-row" target="_blank" rel="noopener">
+        <span class="label">GitHub</span>
+        <span class="value">github.com/tu-usuario</span>
+      </a>
+      <a href="https://twitter.com/" class="contact-row" target="_blank" rel="noopener">
+        <span class="label">Twitter / X</span>
+        <span class="value">@tu-usuario</span>
+      </a>
+      <div class="contact-row">
+        <span class="label">Zona horaria</span>
+        <span class="value">Ajusta la tuya aquí</span>
+      </div>
+    </div>
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2>Antes de escribir</h2>
+      <span class="rule"></span>
+    </div>
+    <ul class="feature-list" style="max-width:60ch;margin-bottom:40px;">
+      <li>Si encontraste un error en algún juego, incluye qué navegador usaste y qué pasó exactamente.</li>
+      <li>Si quieres probar el modo LAN, dime cuántos jugadores y en qué red planeáis jugar.</li>
+      <li>Para colaboraciones, cuéntame brevemente tu idea y qué te gustaría aportar.</li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <h2>HABLEMOS<br><span class="accent">DE TU IDEA.</span></h2>
+      <div class="footer-links">
+        <a href="https://github.com/" title="GitHub" aria-label="GitHub">☖</a>
+        <a href="mailto:tu-correo@ejemplo.com" title="Email" aria-label="Email">✉</a>
+        <a href="https://twitter.com/" title="Twitter / X" aria-label="Twitter">X</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>PAPOI.DEV — Universo de juegos web</span>
+      <span>&copy; 2026 · Hecho con Canvas y café</span>
+    </div>
+  </div>
+</footer>
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-close" id="lightbox-close" role="button" aria-label="Cerrar">&times;</div>
+  <div class="lightbox-nav lightbox-prev" id="lightbox-prev" role="button" aria-label="Anterior">&#8249;</div>
+  <div class="lightbox-nav lightbox-next" id="lightbox-next" role="button" aria-label="Siguiente">&#8250;</div>
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="">
+    <p class="lightbox-caption" id="lightbox-caption"></p>
+  </div>
+</div>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
