@@ -16,20 +16,25 @@
 //   title  -> nombre del juego
 //   period -> años de desarrollo, ej. "2025–2026"
 //   type   -> mecánica / categoría, se ve en rojo en la tarjeta
+//   url    -> (OPCIONAL) ruta a la carpeta donde subiste el juego jugable,
+//             ej. "juegos/papoi-survives/". Si la pones, aparece un botón
+//             "Jugar" en la tarjeta. Si no la pones, no aparece el botón.
 const GAMES = [
   {
     slug: "survives",
     id: "EXP. 001",
     title: "Papoi Survives",
     period: "2025–2026",
-    type: "Oleadas · Multijugador LAN"
+    type: "Oleadas · Multijugador LAN",
+    url: "juegos/papoi-survives/"
   },
   {
     slug: "climb",
     id: "EXP. 002",
     title: "Papoi Climb",
     period: "2026",
-    type: "Físicas de escalada · Arcade"
+    type: "Físicas de escalada · Arcade",
+    url: ""
   }
 ];
 
